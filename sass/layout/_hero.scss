@@ -12,11 +12,10 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../img/hero/webp/bg-mobile.webp);
     max-width: 480px;
-    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
-  @media screen and(max-width: 767px) and(min-device-pixel-ratio: 2),
+  @media screen and(max-width: 767px) and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -30,7 +29,6 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../img/hero/webp/bg-tablet.webp);
     max-width: 768px;
-    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -73,11 +71,10 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media screen and(max-width: 1199px) {
-    width: 360px;
-    font-size: 26px;
-    line-height: 1.61;
-  }
+  max-width: 380px;
+  font-size: 26px;
+  line-height: 1.61;
+
   @media screen and(min-width: 1200px) {
     width: 696px;
     font-size: 44px;
