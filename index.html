@@ -21,8 +21,8 @@
                 <a class="logo logo_black" lang="en" href="./index.html">
                     <span class="logo__web">Web</span><span class="logo__studio">Studio</span>
                 </a>
-                <button class="header__menu-btn" type="button">
-                    <svg class="ikon-menu" width="24px" height="16px">
+                <button class="header__menu-btn" type="button" data-menu-button>
+                    <svg class="ikon-menu" width="40px" height="40px">
                         <use href="./img/svg/symbol-defs.svg#menu"></use>
                     </svg>
                 </button>
@@ -58,12 +58,20 @@
                 </li>
             </ul>
         </div>
-        <!--==============MOBILE-MENU================-->
-         <div class="mobile-menu">
+       
+    </header>
+    <!--==============MOBILE-MENU================-->
+    <div class="mobile-menu" data-menu>
+        <div class="mobile-menu__container">
+            <button type="button" class="mobile-menu__button-close" data-menu-close>
+                <svg class="ikon-close-momile" width="40px" height="40px">
+                    <use href="./img/svg/symbol-defs.svg#close-mobile"></use>
+                </svg>
+            </button>
             <nav class="mobile-nav">
                 <ul class="list mobile-nav__list">
                     <li class="mobile-nav__item">
-                        <a class="mobile-nav__link current link" href="./index.html">Студия</a> 
+                        <a class="mobile-nav__link current link" href="./index.html">Студия</a>
                     </li>
                     <li class="mobile-nav__item">
                         <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
@@ -84,7 +92,7 @@
                         info@devstudio.com
                     </a>
                 </li>
-                
+    
             </ul>
             <ul class="list mobile-menu__social-list">
                 <li class="mobile-menu__social-item"><a class="list mobile-menu__social-link" href="#">Instagram</a></li>
@@ -92,10 +100,8 @@
                 <li class="mobile-menu__social-item"><a class="list mobile-menu__social-link" href="#">Facebook</a></li>
                 <li class="mobile-menu__social-item"><a class="list mobile-menu__social-link" href="#">LinkedIn</a></li>
             </ul>
-
-
-        </div> 
-    </header>
+        </div>
+    </div>
     <main>
         <!--hero-->
         <section class="hero section">
@@ -545,6 +551,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
