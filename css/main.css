@@ -772,7 +772,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -1101,18 +1101,15 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer__container {
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .footer__container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: start;
   }
 }
 
@@ -1144,6 +1141,10 @@ body {
   color: var(--accent-color);
 }
 
+.footer__content {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__content {
     width: 308px;
@@ -1151,32 +1152,31 @@ body {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .footer__content {
-    text-align: center;
+    text-align: start;
   }
 }
 
 .footer__social-box {
-  padding-top: 12px;
-  margin-left: 70px;
+  margin-top: 60px;
+  margin-left: 0;
+  padding-top: 0;
+  text-align: center;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer__social-box {
-    padding-top: 65px;
-    padding-top: 0;
     margin-left: 165px;
-    text-align: center;
+    margin-top: 0;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .footer__social-box {
-    margin-top: 60px;
-    padding-top: 0;
-    margin-left: 0;
-    text-align: center;
+    padding-top: 12px;
+    margin-left: 70px;
+    text-align: start;
   }
 }
 
@@ -1200,22 +1200,27 @@ body {
 .footer__form-box {
   padding-top: 12px;
   margin-left: auto;
-}
-
-@media screen and (max-width: 767px) {
-  .footer__form-box {
-    margin-top: 60px;
-    padding: 0;
-    flex-direction: column;
-    text-align: center;
-    margin-left: 0;
-  }
+  width: 100%;
+  margin-top: 60px;
+  padding: 0;
+  flex-direction: column;
+  text-align: center;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .footer__form-box {
     margin-right: auto;
-    text-align: center;
+    margin-top: 0;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__form-box {
+    width: auto;
+    margin-top: 0;
+    flex-direction: row;
+    text-align: start;
   }
 }
 
@@ -1243,7 +1248,7 @@ body {
 .subscribe__input {
   margin-top: 20px;
   padding-left: 16px;
-  max-width: 358px;
+  width: 98%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
