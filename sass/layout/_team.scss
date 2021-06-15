@@ -1,17 +1,18 @@
 .team {
   background-color: #f5f4fa;
   & .team__name {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 
-    @media screen and(max-width: 1199px) {
-      font-size: 28px;
-      line-height: 1.18;
+    @media screen and(min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+      margin-bottom: 30px;
     }
   }
 }
@@ -21,6 +22,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   & .teammate__name {
+    margin-top: 30px;
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -37,9 +39,6 @@
   }
 }
 
-.teammate__img {
-  margin-bottom: 30px;
-}
 .team__list {
   display: flex;
   flex-wrap: wrap;

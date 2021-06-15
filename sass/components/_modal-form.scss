@@ -110,14 +110,12 @@
 
 .checkbox__description {
   margin-top: 20px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   color: #757575;
   &::before {
-    margin-left: 12px;
-
     display: inline-block;
     content: '';
     vertical-align: middle;
@@ -125,22 +123,33 @@
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
-    margin-right: 10px;
+    margin-right: 6px;
     background-size: cover;
     transition: background-image 250ms, border 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and(min-width: 1200px) {
+      margin-left: 12px;
+    }
     .checkbox:checked + & {
       background-image: url(../img/svg/check.svg);
       border: none;
+    }
+    @media screen and(min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
     }
   }
 }
 
 .checkbox__link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
 
   color: #2196f3;
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
