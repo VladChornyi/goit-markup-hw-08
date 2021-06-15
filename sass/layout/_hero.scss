@@ -8,9 +8,9 @@
 
   @media screen and(max-width: 767px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../img/hero/jpg/bg-mobile.jpg);
+      url(../img/hero/jpg/bg-mobile.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../img/hero/webp/bg-mobile.webp);
+      url(../img/hero/webp/bg-mobile.webp);
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -18,15 +18,15 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../img/hero/jpg/bg-mobile@2x.jpg);
+      url(../img/hero/jpg/bg-mobile@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../img/hero/webp/bg-mobile@2x.webp);
+      url(../img/hero/webp/bg-mobile@2x.webp);
   }
   @media screen and(min-width: 768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../img/hero/jpg/bg-tablet.jpg);
+      url(../img/hero/jpg/bg-tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../img/hero/webp/bg-tablet.webp);
+      url(../img/hero/webp/bg-tablet.webp);
     padding-top: 118px;
     padding-bottom: 118px;
   }
